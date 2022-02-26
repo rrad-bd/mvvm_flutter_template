@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mvvm_templet/screens/not_found/not_found.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 import 'package:mvvm_templet/screens/home/home_view.dart';
 import 'package:mvvm_templet/dependencies/dependencies.dart' as di;
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
             if (routeSettings.name == HomeView.routeName) {
               return const HomeView();
             } else {
-              return const HomeView();
+              return const NotFound();
             }
           },
         );

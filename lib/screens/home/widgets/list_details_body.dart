@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:mvvm_templet/common/custom_appbar.dart';
+import 'package:mvvm_templet/common/widgets/custom_appbar.dart';
 import 'package:mvvm_templet/models/home.dart';
 
 class ListDetails extends StatelessWidget {
@@ -10,7 +9,9 @@ class ListDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppbar(),
+      appBar: const CustomAppbar(
+        automaticallyImplyLeading: true,
+      ),
       body: _buildBody(),
     );
   }

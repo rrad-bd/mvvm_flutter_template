@@ -4,7 +4,12 @@ import 'package:mvvm_templet/services/home/home_service_mock.dart';
 
 GetIt dependency = GetIt.instance;
 
-void init() {
+void initDev() {
+  // dependency injection
+  dependency.registerLazySingleton<HomeService>(() => HomeServiceMock());
+}
+
+void initProd() {
   // dependency injection
   dependency.registerLazySingleton<HomeService>(() => HomeServiceMock());
 }

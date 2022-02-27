@@ -5,7 +5,10 @@ import 'package:mvvm_templet/screens/home/widgets/list_details_body.dart';
 class HomeBody extends StatelessWidget {
   final HomeViewmodel homeViewmodel;
 
-  const HomeBody({Key? key, required this.homeViewmodel}) : super(key: key);
+  const HomeBody({
+    Key? key,
+    required this.homeViewmodel,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

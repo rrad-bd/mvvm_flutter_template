@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_templet/screens/not_found/not_found.dart';
-import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
-import 'package:mvvm_templet/screens/home/home_view.dart';
-import 'package:mvvm_templet/dependencies/dependencies.dart' as di;
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
+
+import 'package:mvvm_templet/dependencies/dependencies.dart' as di;
+import 'package:mvvm_templet/screens/home/home_view.dart';
+import 'package:mvvm_templet/screens/not_found/not_found.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
